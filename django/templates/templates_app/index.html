@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "templates_app/base.html" %}
+ {% block body_block%}
+<h1>WELCOME TO THE INDEX PAGE</h1>
+<h2>this is an example of template inheritance</h2>
+<!-- template filters upper case  -->
+<h1>{{ text|cut:'swetha' }}</h1>
+<h1>{{ numbers|add:"56" }}</h1>
+<h1>{{ name|lower }}</h1>
+<h1>{{ name|length }}</h1>
+
+{% endblock %}
